@@ -1,11 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { Heading } from './main-content/heading/heading';
-import { Summary } from './main-content/summary/summary';
+import { Expander } from './main-content/expander/expander';
 
 @Component({
   selector: 'app-root',
-  imports: [MatSidenavModule, Heading, Summary],
+  imports: [MatSidenavModule, Heading, Expander],
   templateUrl: './app.html',
   styleUrl: './app.scss',
 })
