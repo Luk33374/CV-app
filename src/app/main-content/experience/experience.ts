@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import { Expander } from '../expander/expander';
-import { MatListModule } from '@angular/material/list';
-import { MatIconModule } from '@angular/material/icon';
+import { ExpanderWithList } from '../expander-with-list/expander-with-list';
 
 @Component({
   selector: 'app-experience',
-  imports: [Expander, MatListModule, MatIconModule],
+  imports: [ExpanderWithList],
   templateUrl: './experience.html',
   styleUrl: './experience.scss',
 })
