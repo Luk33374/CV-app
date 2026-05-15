@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { MatExpansionModule } from '@angular/material/expansion';
 
 @Component({
@@ -7,4 +7,6 @@ import { MatExpansionModule } from '@angular/material/expansion';
   templateUrl: './expander.html',
   styleUrl: './expander.scss',
 })
-export class Expander {}
+export class Expander {
+  public title = input.required<string>();
+}
