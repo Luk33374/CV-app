@@ -1,13 +1,23 @@
 <app-expander [title]="title()">
   <mat-list role="list">
     @for (item of list(); track item) {
-      <div class="d-flex gap-2">
-        <mat-icon fontIcon="circle" />
-        <mat-list-item role="listitem" multiple-lines>
-          <p>
-            {{ item.description }}
+      <div>
+        <div class="w-100 d-flex justify-content-between mb-2 ms-2">
+          <p class="mb-0">
+            <strong>{{ item.occupation }}</strong>
           </p>
-        </mat-list-item>
+          <p class="mb-0">
+            <strong>{{ item.timeSpan }}</strong>
+          </p>
+        </div>
+        <div class="d-flex gap-2">
+          <mat-icon fontIcon="circle" />
+          <mat-list-item role="listitem" multiple-lines>
+            <p>
+              {{ item.description }}
+            </p>
+          </mat-list-item>
+        </div>
       </div>
     }
   </mat-list>
