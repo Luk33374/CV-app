@@ -2,6 +2,7 @@ import { Component, input } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { Expander } from '../expander/expander';
+import { ListItem } from './models/list-item';
 
 @Component({
   selector: 'app-expander-with-list',
@@ -11,5 +12,5 @@ import { Expander } from '../expander/expander';
 })
 export class ExpanderWithList {
   public title = input.required<string>();
-  public list = input.required<string[]>();
+  public list = input.required<ListItem[]>();
 }
