@@ -20,5 +20,10 @@ export class Skills {
     { skill: 'Angular Signals', level: 60 },
     { skill: 'Cypress', level: 70 },
     { skill: 'Protractor', level: 65 },
+    { skill: 'Jasmine', level: 75 },
+    { skill: 'Vitest', level: 30 },
+    { skill: 'Jenkins', level: 20 },
+    { skill: '.Net', level: 40 },
+    { skill: 'C#', level: 50 },
   ];
 }
