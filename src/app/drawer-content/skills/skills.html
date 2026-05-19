@@ -1,3 +1,5 @@
 <app-expander title="Skills">
-  <p>Angular, TypeScript, RxJS, HTML, CSS, JavaScript, Angular Signals, Cypress, Protractor</p>
+  @for (skill of skillSet; track skill) {
+    <app-skill-progress-bar [skillName]="skill.skill" [skillLevel]="skill.level" />
+  }
 </app-expander>
