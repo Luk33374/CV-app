@@ -80,7 +80,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
-            "baseHref": "https://luk33374.github.io/cv-app/"
+            "baseHref": "https://luk33374.github.io/CV-app/"
           }
         }
       }
