@@ -1,5 +1,8 @@
 <mat-drawer-container class="main-container">
   <mat-drawer-content>
+    <div class="d-flex justify-content-end">
+      <button matButton (click)="toggleExpander()">{{ buttonText() }}</button>
+    </div>
     <app-heading />
     <div class="gap-4 d-flex flex-column ms-5">
       <app-expander title="Summary">
@@ -15,7 +18,7 @@
       <app-education />
     </div>
   </mat-drawer-content>
-  <mat-drawer mode="side" position="end" opened>
+  <mat-drawer mode="side" position="end" [opened]="expanderOpened()">
     <div class="gap-4 d-flex flex-column">
       <img src="profile-picture.jpg" alt="Profile Picture" />
       <app-skills />
