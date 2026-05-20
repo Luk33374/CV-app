@@ -11,6 +11,7 @@ mat-drawer-content {
 mat-drawer {
   background-color: var(--mat-sys-primary);
   color: var(--mat-sys-primary-container);
+  max-width: 85%;
 }
 img {
   padding: 0% 20%;
