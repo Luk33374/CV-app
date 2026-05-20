@@ -1,21 +1,23 @@
 <mat-drawer-container class="main-container">
-  <mat-drawer-content>
+  <mat-drawer-content class="overflow-hidden h-100">
     <div class="d-flex justify-content-end">
       <button matButton (click)="toggleExpander()">{{ buttonText() }}</button>
     </div>
-    <app-heading />
-    <div class="gap-4 d-flex flex-column ms-5">
-      <app-expander title="Summary">
-        <p>
-          Angular Developer with 4+ years of experience building responsive, scalable web
-          applications using Angular, TypeScript, RxJS, HTML, CSS, and JavaScript. Skilled in
-          developing reusable components, integrating REST APIs, and improving performance and user
-          experience. Strong collaborator with experience working in Agile teams and delivering
-          clean, maintainable front-end solutions.
-        </p>
-      </app-expander>
-      <app-experience />
-      <app-education />
+    <div class="scrollable-content">
+      <app-heading />
+      <div class="gap-4 d-flex flex-column ms-5">
+        <app-expander title="Summary">
+          <p>
+            Angular Developer with 4+ years of experience building responsive, scalable web
+            applications using Angular, TypeScript, RxJS, HTML, CSS, and JavaScript. Skilled in
+            developing reusable components, integrating REST APIs, and improving performance and
+            user experience. Strong collaborator with experience working in Agile teams and
+            delivering clean, maintainable front-end solutions.
+          </p>
+        </app-expander>
+        <app-experience />
+        <app-education />
+      </div>
     </div>
   </mat-drawer-content>
   <mat-drawer mode="side" position="end" [opened]="expanderOpened()">
