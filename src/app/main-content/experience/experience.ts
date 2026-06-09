@@ -11,13 +11,13 @@ import { ListItem } from '../expander-with-list/models/list-item';
 export class Experience {
   protected experienceItems: ListItem[] = [
     {
-      occupation: 'Angular Developer',
+      occupation: 'Software Developer',
       timeSpan: '2023 - Present',
       description:
-        'Angular Developer at Digital Technology Poland (DTP Ltd.), working on a project for Rittal. I was primarily responsible for developing and maintaining the front end of web applications using Angular and related technologies. The project focused on delivering high-quality software solutions for clients in the AI sector, particularly tools for calculating heat dissipation in AI data centers.',
+        'Developer at Digital Technology Poland (DTP Ltd.), working on a project for Rittal. I was primarily responsible for developing and maintaining the front end of web applications using Angular and related technologies. The project focused on delivering high-quality software solutions for clients in the AI sector, particularly tools for calculating heat dissipation in AI data centers.',
     },
     {
-      occupation: 'Angular Developer',
+      occupation: 'Software Developer',
       timeSpan: '2022–2023',
       description:
         'Frontend Developer at Comernal Software. I was responsible for developing and maintaining an application for organizing the production of electrical cabinets.',
